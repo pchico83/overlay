@@ -1,7 +1,5 @@
 #!/bin/bash
 
-docker version
-
 docker build -t $IMAGE_NAME .
 
 if [ "$?" -eq "1" ]; then

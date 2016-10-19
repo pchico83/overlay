@@ -1,8 +1,11 @@
 #!/bin/bash
 
+docker version
+
 docker build .
 
 if [ "$?" -eq "1" ]; then
    echo "FAILED!";
    sleep 1100;
+   exit 1;
 fi
